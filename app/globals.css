@@ -2,32 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.scrollbar::-webkit-scrollbar {
+  width: 6px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #f9f9f9;
+  border-radius: 10px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+input[type="range"] {
+  width: 86%;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #fff;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 2px;
+  background: #ececed;
+  border-radius: 14px;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 2px;
+  background: #ececed;
+  border-radius: 14px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 18px;
+  width: 18px;
+  margin-top: -8px;
+  background-color: #2e90fa;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: -410px 0 4px 400px #d1e9ff;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 18px;
+  width: 18px;
+  margin-top: -8px;
+  background-color: #2e90fa;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: -410px 0 4px 400px #d1e9ff;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #f5f5f6;
+  color: #161b26;
+  font-weight: 500;
+  outline: none;
 }
