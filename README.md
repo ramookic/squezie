@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Squezie - Fast and Efficient Image Compression Tool
 
-## Getting Started
+Squezie offers an advanced, web-based image compression service designed to provide fast and efficient image optimization. This tool allows users to compress images without the need to upload them to a server, ensuring data privacy and security.
 
-First, run the development server:
+## Technologies
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Next.js
+- Browser Image Compression (https://www.npmjs.com/package/browser-image-compression)
+- Web Workers
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Image Compression
+- **Unlimited Image Compression:** Compress an unlimited number of images without any restrictions.
+- **Adjustable Compression Settings:** Customize compression ratio, set maximum width and height and add suffixes to filenames.
+- **Batch Processing:** Upload multiple images at once and compress them efficiently without affecting performance.
+- **Download Options:** Download compressed images individually or as a zip file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Customization
+- **Compression Ratio:** Select the desired compression ratio to balance between image quality and file size.
+- **Dimensions:** Set maximum width and height for your images to ensure they fit within specified dimensions while maintaining aspect ratio.
+- **File Suffix:** Add custom suffixes to filenames for easy differentiation from original files.
 
-## Learn More
+### User Interface
+- **Web-Based and Easy to Use:** No need to install any software. Use the image compressor directly from your browser.
+- **Responsive Design:** Fully responsive and can be used on both desktop and mobile devices.
 
-To learn more about Next.js, take a look at the following resources:
+### Security
+- **Secure and Private:** Images are processed locally in your browser and are not uploaded to any server, ensuring data security and privacy.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Additional Features
+- **Efficient Compression:** Utilizing web workers to handle image processing, ensuring the UI remains responsive and performance is optimized.
+- **Fast Processing:** Capable of processing large batches of images quickly, outperforming many popular alternatives.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## How to Use
 
-## Deploy on Vercel
+1. **Upload Images:** Click the 'Choose File' button to upload your images.
+2. **Adjust Settings:** Set your desired compression ratio, maximum width and height and file suffix.
+3. **Compress:** Click the 'Compress' button to start the compression process.
+4. **Download:** Download the compressed images individually or as a zip file.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## How Can It Be Improved?
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Add more customization options for compression settings.
